@@ -45,7 +45,7 @@ li {
     list-style-type: none;
 }
 
-.nav__container {
+.navbar {
     width: 100%;
     max-width: 1200px;
     padding: 0 24px;
@@ -55,9 +55,12 @@ li {
     margin: 0 auto;
 }
 
-.nav__link {
-    margin-left: 16px;
+.navlinks {
     display: flex;
+}
+
+.nav__link--anchor {
+    margin-left: 16px;
 }
 
 .nav__link nav__link--primary {
