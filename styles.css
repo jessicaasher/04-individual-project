@@ -129,3 +129,33 @@ header {
     flex-direction: column;
     justify-content: space-around;
 }
+
+/* 
+
+MOVIE CARDS 
+
+*/
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f7f7f7;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
