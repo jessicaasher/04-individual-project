@@ -136,16 +136,15 @@ MOVIE CARDS
 
 */
 
-.gallery {
+.gallery__row {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   padding: 40px;
   background-color: #F8F5F1;
 }
 
-.card {
+.movie-card {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
