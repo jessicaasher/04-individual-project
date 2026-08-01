@@ -12,6 +12,7 @@ async function main() {
     <p><b>Episode:</b>: Episode X</p>
   </div>`
     )
+    .join("")
  );
 } 
 
