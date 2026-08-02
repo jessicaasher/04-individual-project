@@ -5,11 +5,11 @@ async function main() {
  const moviesData = await movies.json();
  const movieListEl = document.querySelector(".movie-list");
  console.log(moviesData);
- movieListEl.innerHTML = moviesData
-    .map(
-        (movie) => movieHTML(movie)
-    )
-    .join("");
+ movieListEl.innerHTML = moviesData.map((movie) => movieHTML(movie)).join("");
 } 
 
 main();
+
+function movieHTML(movie) {
+    
+}
