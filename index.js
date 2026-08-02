@@ -8,12 +8,6 @@ async function main() {
  movieListEl.innerHTML = moviesData
     .map(
         (movie) => 
-            `<div class="movie-card">
-        <img src="https://m.media-amazon.com/images/M/MV5BNWE5MGI3MDctMmU5Ni00YzI2LWEzMTQtZGIyZDA5MzQzNDBhXkEyXkFqcGc@._V1_QL75_UX380_CR0,1,380,562_.jpg" alt="Card 1">
-        <h2>${movie.Title}</h2>
-        <p><b>Year:</b> ${movie.Year}</p>
-        <p><b>Runtime:</b> ${movie.Runtime}</p>
-    </div>`
     )
     .join("");
 } 
