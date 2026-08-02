@@ -7,7 +7,7 @@ async function main() {
  console.log(moviesData);
  movieListEl.innerHTML = moviesData
     .map(
-        (movie) => 
+        (movie) => movieHTML(movie)
     )
     .join("");
 } 
