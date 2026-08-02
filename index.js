@@ -5,9 +5,8 @@ async function main() {
  const movies = await fetch("https://www.omdbapi.com/?i=tt3896198&apikey=a0269a8b")
  const moviesData = await movies.json();
  console.log(moviesData);
- movieListEl.innerHTML = moviesData.map((movie) => movieHTML(movie)).join("");
-} 
-
+ movieListEl.innerHTML = moviesHTML(moviesData);
+}
 main();
 
 function movieHTML(movie) {
