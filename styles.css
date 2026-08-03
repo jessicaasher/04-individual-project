@@ -158,3 +158,9 @@ MOVIE CARDS
   border-radius: 8px;
   margin-bottom: 15px;
 }
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
