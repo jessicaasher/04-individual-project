@@ -27,10 +27,28 @@ function showSkeletons() {
             <div class="movie-card__year movie-card__year--skeleton"></div>
             </div>
         `).join('');
-        
+
     moviesGrid.innerHTML = skeletons;
 }
 
+
+// Fetch movies from API
+async function fetchMovies(searchTerm) {
+    showSkeletons();
+
+    const res = await fetch('https://www.omdbapi.com/?apikey=$a0269a8b}&s=${searchTerm}');
+    const data = await res.json();
+
+    if (data.Response === 'True') {
+        currentMovies = data.Search;
+        resultsInfo.textContent = 'Showing: ${searchTerm}';
+        displayMovies(currentMovies);
+    } else {
+        resultsInfo.textContent = 'Showing: ${searchTerm}';
+        moviesGrid.innerHTML = '<p>No movies found.</p>';
+        currentMovies = [];
+    }
+}
 
 //Display movies
 
