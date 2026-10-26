@@ -1,1 +1,1 @@
-localStorage.getItem("movieId")
+localStorage.getItem("movieID")

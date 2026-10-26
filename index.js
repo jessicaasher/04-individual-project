@@ -1,5 +1,6 @@
 // API "https://www.omdbapi.com/?i=tt3896198&apikey=a0269a8b"
 // API "https://www.omdbapi.com/?s=fast&&apikey=a0269a8b"
+//
 
 const movieListEl = document.querySelector(".movie-list");
 
@@ -11,13 +12,14 @@ async function main() {
 }
 main();
 
-function showMovieDetails(movie) {
-    console.log(movie);
+function showMovieDetails(id) {
+    window.location.href
+    console.log(id);
 }
 
 
 function movieHTML(movie) {
-    return `<div class="movie-card" onclick="showMovieDetails(${movie})">
+    return `<div class="movie-card" onclick="showMovieDetails('${movie.imdbID}')">
         <img src="https://m.media-amazon.com/images/M/MV5BNWE5MGI3MDctMmU5Ni00YzI2LWEzMTQtZGIyZDA5MzQzNDBhXkEyXkFqcGc@._V1_QL75_UX380_CR0,1,380,562_.jpg" alt="Card 1">
         <h2>${movie.Title}</h2>
             <p><b>Year:</b> ${movie.Year}</p>
