@@ -64,7 +64,7 @@ function displayMovies(movies) {
                 <p class="movie-card__year">${movie.Year}</p>
             </div>
         `;
-    });
+    }).join('');
 
-    return movieResults.join('');
+    moviesGrid.innerHTML = movieResults;
 }
