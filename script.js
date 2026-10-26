@@ -42,6 +42,7 @@ async function fetchMovies(searchTerm) {
     if (data.Response === 'True') {
         currentMovies = data.Search;
         resultsInfo.textContent = `Showing: ${searchTerm}`;
+        sortSelect.value = 'default'; // Reset sort select to default
         displayMovies(currentMovies);
     } else {
         resultsInfo.textContent = `Showing: ${searchTerm}`;
