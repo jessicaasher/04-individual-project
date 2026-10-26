@@ -72,7 +72,7 @@ function displayMovies(movies) {
 // Sort movies
 
 sortSelect.addEventListener('change', (e) => {
-    sortMovies{e.target.value};
+    sortMovies(e.target.value);
 });
 
 function sortMovies(sortType) {
@@ -83,7 +83,7 @@ function sortMovies(sortType) {
     } else if (sortType === 'z-a') {
         sortedMovies.sort((a,b) => b.Title.localeCompare(a.Title));
     } else if (sortType === 'newest') {
-        sortedMovies.sort((a. b) => Number(b.Year) - Number(a.Year));
+        sortedMovies.sort((a, b) => Number(b.Year) - Number(a.Year));
     } else if (sortType === 'oldest') {
         sortedMovies.sort((a, b) => Number(a.Year) - Number(b.Year));
     }
