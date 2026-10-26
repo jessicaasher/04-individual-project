@@ -9,6 +9,14 @@ const sortSelect = document.querySelector('#sortSelect');
 let currentMovies = [];
 
 
+// Event Listener
+searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const searchTerm = searchInput.value.trim();
+    if (searchTerm) {
+        fetchMovies(searchTerm);
+    }
+})
 
 
 
