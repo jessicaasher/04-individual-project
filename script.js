@@ -1,9 +1,10 @@
 
-
+const API_KEY = 'a0269a8b';
 const searchForm = document.querySelector('#searchForm');
 const searchInput = document.querySelector('#searchInput');
 const moviesGrid = document.querySelector('#moviesGrid');
-
+const resultsInfo = document.querySelector('#resultsInfo');
+const sortSelect = document.querySelector('#sortSelect');
 
 
 //Display movies
