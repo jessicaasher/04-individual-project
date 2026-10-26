@@ -36,7 +36,7 @@ function showSkeletons() {
 async function fetchMovies(searchTerm) {
     showSkeletons();
 
-    const res = await fetch('https://www.omdbapi.com/?apikey=$a0269a8b}&s=${searchTerm}');
+    const res = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchTerm}`);
     const data = await res.json();
 
     if (data.Response === 'True') {
