@@ -1,3 +1,11 @@
+
+
+const searchForm = document.querySelector('#searchForm');
+const searchInput = document.querySelector('#searchInput');
+const moviesGrid = document.querySelector('#moviesGrid');
+
+
+
 //Display movies
 
 function displayMovies(movies) {
