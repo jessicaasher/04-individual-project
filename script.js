@@ -6,6 +6,12 @@ const moviesGrid = document.querySelector('#moviesGrid');
 const resultsInfo = document.querySelector('#resultsInfo');
 const sortSelect = document.querySelector('#sortSelect');
 
+let currentMovies = [];
+
+
+
+
+
 
 //Display movies
 
