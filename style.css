@@ -31,7 +31,7 @@ nav {
     /* 135deg, */ /* use 135deg instead of the var(--nav-angle) if you don't plan on navShimmer anim */
     rgba(0, 0, 0, 0.8),
     rgba(78, 78, 78, 0.7)
-  );
+  ); 
   background-size: 100% 100%;
   background-repeat: no-repeat;
   color: white;
