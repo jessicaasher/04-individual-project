@@ -41,10 +41,10 @@ async function fetchMovies(searchTerm) {
 
     if (data.Response === 'True') {
         currentMovies = data.Search;
-        resultsInfo.textContent = 'Showing: ${searchTerm}';
+        resultsInfo.textContent = `Showing: ${searchTerm}`;
         displayMovies(currentMovies);
     } else {
-        resultsInfo.textContent = 'Showing: ${searchTerm}';
+        resultsInfo.textContent = `Showing: ${searchTerm}`;
         moviesGrid.innerHTML = '<p>No movies found.</p>';
         currentMovies = [];
     }
